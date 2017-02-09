@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script type="text/javascript" src="~/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="~/Scripts/moment.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/moment-with-locales.js"></script>
+<script src="~/Scripts/moment-with-locales.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap-datetimepicker.js"></script>
+<script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+<link href="~/Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" data-date-format="DD/MM/YYYY"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({ locale: 'tr' });
+            });
+        </script>
+
+
+    </div>
+</div>
